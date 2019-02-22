@@ -82,7 +82,6 @@
 #pragma mark jumpBtnClick点击事件
 - (void)jumpBtnClick:(UIButton *)sender{
     self.webview = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WDITH, SCREEN_HEIGTH-100)];
-    
     [self.view addSubview:self.webview];
     
     NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
