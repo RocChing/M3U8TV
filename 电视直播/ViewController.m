@@ -133,7 +133,7 @@
     }];
     
     UIButton *homeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    homeBtn.backgroundColor = UIColor.redColor;
+    homeBtn.backgroundColor = UIColor.blackColor;
     [homeBtn setTitle:@"主页" forState:UIControlStateNormal];
     [homeBtn addTarget:self action:@selector(homeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [bottomView addSubview:homeBtn];
