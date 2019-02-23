@@ -55,6 +55,7 @@
         
         [self.view addSubview:self.tableView];
         self.tableView.hidden = YES;
+        self.tableView.backgroundColor = [UIColor clearColor];
         
         self.jumpBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         self.jumpBtn.backgroundColor = UIColor.redColor;
@@ -279,6 +280,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCellFileList" forIndexPath:indexPath];
     cell.textLabel.text = self.fileList[indexPath.row];
+    cell.backgroundColor = [UIColor colorWithWhite:0 alpha:0.6];
+    cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
 }
 
